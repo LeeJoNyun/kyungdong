@@ -40,16 +40,30 @@
     justify-content: center;
 }
 #mainVisual .mainBanner li h2 {
+    font-size: 40px;
+    font-weight: 700;
+    letter-spacing: -0.5px;
+    color: #fff;
 }
 #mainVisual .mainBanner li h2 span {
 }
 #mainVisual .mainBanner li h2 + p {
+    font-size: 20px;
+    color: #fff;
 }
 #mainVisual .mainBanner li h2 + p span {
 }
 #mainVisual .mainBanner li .more {
+    margin-top: 50px;
 }
 #mainVisual .mainBanner li .more a {
+    display: block;
+    width: 150px;
+    text-align: center;
+    line-height: 40px;
+    border-radius: 25px;
+    background: #fff;
+    border: 1px solid #fff;
 }
 #mainVisual .btn {
     position: absolute;
@@ -59,6 +73,7 @@
     height: 70px;
     border: 1px solid #fff;
     background-color: transparent;
+    z-index: 50;
 }
 #mainVisual .btn i {
     font-size: 30px;
@@ -134,7 +149,7 @@
     border: 1px solid #fff;
     position: relative;
     overflow: hidden;
-    text-align: center;
+    /* text-align: center; */
 }
 
 .main .content2 .more a::before {
@@ -157,8 +172,10 @@
     left: -10px;
 }
 .main .content2 .more a span {
-    color: #fff;
     position: relative;
+    color: #fff;
+    font-weight: 500;
+    z-index: 20;
 }
 
 .main .content2 .more a:hover span {
@@ -427,6 +444,11 @@
     right: 100px;
     top: 50%;
     transform: translateY(-50%);
+    z-index: 100;
+    display: none;
+}
+.menu.on {
+    display: block;
 }
 .menu::after {
     content: '';
